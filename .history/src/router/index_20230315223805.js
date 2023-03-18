@@ -14,7 +14,7 @@ const routes = [
     component: navBar,
     children: [
       {
-        path: '/',
+        path: '/home',
         name: 'homePage',
         component: homePage
       },

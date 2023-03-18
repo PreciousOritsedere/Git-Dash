@@ -15,34 +15,34 @@
                         <!-- <p>Statistics</p> -->
                     </div>
                     <div>
-                        <button style="background-color: #1F197A;" class="pubStats">Public</button>
+                        <button class="pubStats">Public</button>
                     </div>
                 </div>
                 <div class="stats">
                     <h2>Statistics</h2>
                 </div>
                 <div class="bton">
-                    <button style="background-color: #E6F3F7;"  class="btnStats">
+                    <button class="btnStats">
                         <span style="margin: 0%; padding: 0%;"><i class="fas fa-code-branch"></i></span>
                         <p style="margin: 0%; padding: 0%;">{{forks}} Fork</p>
                     </button>
-                    <button style="background-color: #FFFADE;" class="btnStats">
+                    <button class="btnStats">
                         <span style="margin: 0%; padding: 0%;"><i class="far fa-star"></i></span>
                         <p style="margin: 0%; padding: 0%;">{{stargazers_count}} Stars</p>
                     </button>
-                    <!-- <button class="btnStats">
+                    <button class="btnStats">
                         <span style="margin: 0%; padding: 0%;"><i class="fas fa-code-branch"></i></span>
                         <p style="margin: 0%; padding: 0%;">Branches</p>
-                    </button> -->
-                    <button style="background-color: #E8D5B5;" class="btnStats">
-                        <span style="margin: 0%; padding: 0%;"><i class="fas fa-eye"></i></span>
-                        <p style="margin: 0%; padding: 0%;">{{ watchers }} watching</p>
                     </button>
-                    <button style="background-color: #C6FCED;" class="btnStats">
+                    <button class="btnStats">
+                        <span style="margin: 0%; padding: 0%;"><i class="fas fa-eye"></i></span>
+                        <p style="margin: 0%; padding: 0%;">Watching</p>
+                    </button>
+                    <button class="btnStats">
                         <span style="margin: 0%; padding: 0%;"><i class="fas fa-code-branch"></i></span>
                         <p style="margin: 0%; padding: 0%;">{{size}} mb</p>
                     </button>
-                    <button style="background-color: #F7EBFF;" class="btnStats">
+                    <button class="btnStats">
                         <span style="margin: 0%; padding: 0%;"><i class="fas fa-code-branch"></i></span>
                         <p style="margin: 0%; padding: 0%;">{{subscribers_count}} sub</p>
                     </button>
@@ -74,7 +74,7 @@ export default {
             stargazers_count: '',
             size: '',
             subscribers_count: '',
-            watchers: '',
+            subscribers_count: '',
         };
     },
 
@@ -96,7 +96,6 @@ export default {
                 this.stargazers_count = response1.data.stargazers_count
                 this.size = response1.data.size
                 this.subscribers_count = response1.data.subscribers_count
-                this.watchers = response1.data.watchers
                 this.created_at = response1.data.created_at.split("T")[0]
                 // User Data response is response1
 
@@ -129,7 +128,7 @@ export default {
 .projecN {
     font-family: 'Work Sans';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     /* identical to box height */
@@ -137,7 +136,7 @@ export default {
     display: flex;
     align-items: center;
 
-    color: #1F197A;
+    color: #000000;
 }
 
 .abtPrj {
@@ -163,7 +162,7 @@ export default {
 .btnBck {
     background-color: #fff;
     border: none;
-    color: #1F197A;
+
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
@@ -173,10 +172,12 @@ export default {
 
     display: flex;
     align-items: center;
+
+    color: #000000;
 }
 
 .btnStats:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .projct {
@@ -208,21 +209,18 @@ export default {
     width: 100%;
     height: 60px;
     padding: 0 1rem;
-    border: none;
+    border: 1px solid grey;
 }
 
 .pubStats {
 
-    /* background-color: #fff; */
+    background-color: #fff;
     border-radius: 5rem;
     margin: 2rem;
     width: 100%;
     height: 60px;
-    color: #fff;
     padding: 0 1rem;
-    font-size: 20px;
-    font-weight: 800;
-    border: none;
+    border: 1px solid grey;
 }
 
 .pubStats:hover {

@@ -6,12 +6,12 @@
                     <img :src=avatar_image alt="" width="100%">
                     <div class="nameTxt">
                         <h5 class="firstN">{{ name }}</h5>
-                        
+                        <p class="otherN">Blessing</p>
                         <p class="otherN">{{ bio }}</p>
                     </div>
                     <div class="emailTxt">
                         <span style="margin-right: 1rem;"><i class="far fa-envelope"></i></span>
-                        <p>rukyjacob@gmail.com</p>
+                        <p>@gmail.com</p>
                     </div>
                     <div class="emailTxt">
                         <span style="margin-right: 1rem;"><i class="fas fa-map-marker-alt"></i></span>

@@ -6,12 +6,12 @@
                     <img :src=avatar_image alt="" width="100%">
                     <div class="nameTxt">
                         <h5 class="firstN">{{ name }}</h5>
-                        
+                        <p class="otherN">Blessing</p>
                         <p class="otherN">{{ bio }}</p>
                     </div>
                     <div class="emailTxt">
                         <span style="margin-right: 1rem;"><i class="far fa-envelope"></i></span>
-                        <p>rukyjacob@gmail.com</p>
+                        <p>horlarnshiley1@gmail.com</p>
                     </div>
                     <div class="emailTxt">
                         <span style="margin-right: 1rem;"><i class="fas fa-map-marker-alt"></i></span>
@@ -452,6 +452,11 @@ export default {
         // },
         async Userdata() {
             await axios.all([
+                // axios.get(`http://localhost:3000/api/v1/jwtauth/user/users/${userId}`, {
+                //     headers: {
+                //         'token': `Bearer ${token}`
+                //     }
+                // }),
                 await axios.get(`https://api.github.com/users/PreciousOritsedere`),
                 await axios.get(`https://api.github.com/users/PreciousOritsedere/repos`)
             ])

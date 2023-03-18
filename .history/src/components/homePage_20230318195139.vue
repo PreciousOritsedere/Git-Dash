@@ -6,7 +6,7 @@
                     <img :src=avatar_image alt="" width="100%">
                     <div class="nameTxt">
                         <h5 class="firstN">{{ name }}</h5>
-                        
+                        <p class="otherN">Blessing</p>
                         <p class="otherN">{{ bio }}</p>
                     </div>
                     <div class="emailTxt">

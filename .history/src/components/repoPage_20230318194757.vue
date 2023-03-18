@@ -173,6 +173,8 @@ export default {
 
     display: flex;
     align-items: center;
+
+    color: #000000;
 }
 
 .btnStats:hover {

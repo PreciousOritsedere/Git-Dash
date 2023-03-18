@@ -129,7 +129,7 @@ export default {
 .projecN {
     font-family: 'Work Sans';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     /* identical to box height */
@@ -137,7 +137,7 @@ export default {
     display: flex;
     align-items: center;
 
-    color: #1F197A;
+    color: ;
 }
 
 .abtPrj {
@@ -163,7 +163,7 @@ export default {
 .btnBck {
     background-color: #fff;
     border: none;
-    color: #1F197A;
+
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
@@ -173,6 +173,8 @@ export default {
 
     display: flex;
     align-items: center;
+
+    color: #000000;
 }
 
 .btnStats:hover {
